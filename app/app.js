@@ -5,10 +5,10 @@ const PORT = 3000;
 const app = express();
 
 app.set('view engine', 'pug');
-app.set("views", process.cwd() + "/views");
+app.set('views', process.cwd() + "/views");
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('index');
 });
 
 app.get('/about', (req, res) => {
