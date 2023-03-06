@@ -94,16 +94,13 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-app.get('/about', (req, res) => {
+app.get('/app/docs/views/about', (req, res) => {
     res.render('about');
 });
 
-app.get('/publication', (req, res) => {
+app.get('/app/docs/views/publication', (req, res) => {
     res.render('publications');
 });
-
-app.use("/image",express.static("/assets/image"));
-app.use("/", controller);
 
 app.listen(PORT);
 console.log(`Listening to ${PORT}`);
