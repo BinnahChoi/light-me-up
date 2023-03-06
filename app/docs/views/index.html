@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400&family=Oswald:wght@500&family=Source+Sans+Pro:wght@600&family=Ubuntu:wght@300&display=swap');
+
+body{
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar {
+    color: red;
+}
+.container {
+    margin: 1rem;
+    display: flex;
+    border-bottom: 1px solid rgba(196, 195, 195, 0.506);
+    align-items: center;
+}
+.navbar-brand {
+    color: black;
+    font-size: 3rem;
+    margin: 1rem;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar-nav {
+    margin: 1rem;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+.nav-link {
+    margin: 0 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Noto Serif', serif;
+    color: gray;
+}
+
+.content-box {
+    margin: 1rem;
+    border-bottom: 1px solid rgba(196, 195, 195, 0.506);
+}
+
+.sub-title {
+    margin: 2.5rem 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: gray
+}
+
+
+    </style>
+  </head>
+  <body> 
+    <nav class="navbar">
+      <div class="container"><a class="navbar-brand" href="/"> Binnah Choi
+          <div class="navbar-nav"><a class="nav-link active" aria-current="page" href="/">Home</a><a class="nav-link" href="/about">About</a><a class="nav-link" href="/publication">Publications</a></div></a></div>
+    </nav>
+    <div class="content-box">
+      <div class="sub-title">Some short version of your information</div>
+    </div>
+    <style>
+       .date {
+    margin: 2rem;
+}
+.post-title {
+    margin: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+    </style>
+    <div class="date"></div>
+    <div class="post-title">Binnah Choi </div>
+    <script>const date = document.querySelector('.date');
+date.innerHTML = new Date().toLocaleDateString();
+
+    </script>
+  </body>
+</html>
