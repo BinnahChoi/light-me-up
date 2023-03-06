@@ -1,0 +1,25 @@
+{
+  "name": "cv_binnah",
+  "version": "1.0.0",
+  "description": "This is cv of Binnah",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BinnahChoi/light-me-up.git"
+  },
+  "author": "Jay and Binnah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BinnahChoi/light-me-up/issues"
+  },
+  "homepage": "https://github.com/BinnahChoi/light-me-up#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0",
+    "path": "^0.12.7"
+  }
+}
