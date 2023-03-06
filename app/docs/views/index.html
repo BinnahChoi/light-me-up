@@ -57,8 +57,8 @@ body{
   </head>
   <body> 
     <nav class="navbar">
-      <div class="container"><a class="navbar-brand" href="/"> Binnah Choi
-          <div class="navbar-nav"><a class="nav-link active" aria-current="page" href="/">Home</a><a class="nav-link" href="/about">About</a><a class="nav-link" href="/publication">Publications</a></div></a></div>
+      <div class="container"><a class="navbar-brand" href="/app/docs/views/"> Binnah Choi
+          <div class="navbar-nav"><a class="nav-link active" aria-current="page" href="/app/docs/views">Home</a><a class="nav-link" href="/app/docs/views/about">About</a><a class="nav-link" href="/app/docs/views/publication">Publications</a></div></a></div>
     </nav>
     <div class="content-box">
       <div class="sub-title">Some short version of your information</div>
@@ -90,7 +90,7 @@ const app = express();
 app.set('view engine', 'pug');
 app.set('views', process.cwd() + "/views");
 
-app.get('/', (req, res) => {
+app.get('/app/docs/views/', (req, res) => {
     res.render('index');
 });
 
