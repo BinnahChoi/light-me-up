@@ -1,5 +1,5 @@
 import express from "express";
-import globalRouter from "./router/apiRouter.js";
+import {controller} from "./script/controller.js";
 
 const PORT = 3000;
 const app = express();
@@ -20,7 +20,7 @@ app.get('/publication', (req, res) => {
 });
 
 app.use("/image",express.static("/assets/image"));
-app.use("/", globalRouter);
+app.use("/", controller);
 
 app.listen(PORT);
 console.log(`Listening to ${PORT}`);

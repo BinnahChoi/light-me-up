@@ -64,7 +64,10 @@ body{
 </nav>
 <div class="date"></div>
 <div class="post-title">Binnah Choi </div>
-<script>const date = document.querySelector('.date');
-date.innerHTML = new Date().toLocaleDateString();
+<script>export const controller = () => {
+    const date = document.querySelector('.date');
+    date.innerHTML = new Date().toLocaleDateString();
+}
+
 
 </script>
