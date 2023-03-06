@@ -7,7 +7,7 @@ const app = express();
 app.set('view engine', 'pug');
 app.set('views', process.cwd() + "/views");
 
-app.get('/', (req, res) => {
+app.get('/app/docs/views/', (req, res) => {
     res.render('index');
 });
 
